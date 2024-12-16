@@ -2,7 +2,8 @@ from flask import Flask, jsonify, request
 from bs4 import BeautifulSoup
 import requests
 from datetime import datetime
-from urllib.parse import unquote,urlparse, parse_qs
+from urllib.parse import urlparse, parse_qs
+from werkzeug.urls import unquote
 
 app = Flask(__name__)
 
@@ -157,8 +158,8 @@ def get_points():
     # Return the data as a JSON response
     return jsonify(data)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
 
 # # Define the API endpoint to accept a URL in the path
 # @app.route('/api/points/<path:encoded_url>', methods=['GET'])
