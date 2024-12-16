@@ -1,4 +1,7 @@
-Flask
-requests
-beautifulsoup4
+
 gunicorn
+
+Flask
+beautifulsoup4
+requests
+urllib3
