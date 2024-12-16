@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "app.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/points",
+        "dest": "app.py"
+      },
+      {
+        "src": "/api/trackwithbuddy",
+        "dest": "app.py"
+      }
+    ]
+  }
+  

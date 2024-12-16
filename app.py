@@ -157,8 +157,8 @@ def get_points():
     # Return the data as a JSON response
     return jsonify(data)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
 
 # # Define the API endpoint to accept a URL in the path
 # @app.route('/api/points/<path:encoded_url>', methods=['GET'])
